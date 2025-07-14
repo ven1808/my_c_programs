@@ -1,6 +1,19 @@
 # Prerequisites
 *.d
 
+# === C Files ===
+
+# Compiled object files
+*.o
+
+# Compiled binary/executable files
+*.out
+*.exe
+
+# Dependency files
+*.d
+
+
 # Object files
 *.o
 *.ko

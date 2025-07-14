@@ -15,6 +15,14 @@ int main()
     {
         length++;
     }
+
+    // Remove trailing newline character if present
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+            break;
+        }
+    }
     
     j = length -1;
     
@@ -23,6 +31,8 @@ int main()
         rev[i] = str[j];
         j--;
     }
+
+    rev[j] = '\0'; // Add null terminator at the end
     
     printf("Reverse of the string is %s\n", rev);
     
